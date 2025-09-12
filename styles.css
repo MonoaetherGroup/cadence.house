@@ -1,20 +1,32 @@
-:root { --bg:#000000; --fg:#f2f2f2; }
-* { box-sizing: border-box; }
-html, body { height: 100%; }
+/* Import police */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
 body {
-  margin: 0; background: var(--bg); color: var(--fg);
-  font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
-  letter-spacing: 0.02em;
-  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-  display: grid; grid-template-rows: auto 1fr;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;         /* taille élégante, pas trop grosse */
+  line-height: 1.8;
+  color: #ffffff;
+  background: #000000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
+
 header {
-  text-align: center; opacity: 0.7;
-  font-size: clamp(12px, 1.4vw, 16px);
-  padding: 24px 16px 0 16px;
+  font-size: 28px;         /* sobre, pas trop grand */
+  font-weight: 500;
+  margin-top: 40px;
+  letter-spacing: 2px;     /* espace rare, luxe */
 }
-main {
-  min-height: 0; display: grid; place-content: center;
-  text-align: center; padding: 8vh 16px; gap: 0.8em;
+
+main p {
+  font-size: 20px;
+  margin: 0.6em 0;
 }
-main p { margin: 0; line-height: 1.25; font-size: clamp(20px, 3.6vw, 42px); font-weight: 500; }
+
+main p:last-child {
+  margin-top: 4em;         /* l’adresse descend bas */
+  font-size: 16px;         /* plus discret */
+  opacity: 0.6;            /* un voile de rareté */
+  letter-spacing: 1px;
+}
