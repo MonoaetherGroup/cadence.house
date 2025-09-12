@@ -1,33 +1,46 @@
-/* Import police */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Playfair+Display:wght@400;500&display=swap');
 
 body {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;         /* texte principal plus ample */
-  line-height: 1.8;
-  color: #ffffff;
-  background: #000000;
-  text-align: center;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
 }
 
+/* Header = nom du site */
 header {
-  font-size: 16px;         /* plus petit que le corps */
-  font-weight: 400;
-  margin-top: 30px;
+  font-family: 'Cinzel', serif;
+  font-size: 16px;          /* discret */
+  margin-top: 20px;         /* petite marge haut */
+  opacity: 0.7;
   letter-spacing: 1px;
-  opacity: 0.7;            /* discret, comme un filigrane */
+}
+
+/* Corps du texte = centre */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* centre vertical */
+  align-items: center;
+  font-family: 'Playfair Display', serif;
 }
 
 main p {
-  font-size: 20px;         /* corps = centre de gravité */
+  font-size: 20px;          /* corps plus grand */
   margin: 0.7em 0;
 }
 
+/* Adresse = sous le corps, mais pas en bas */
 main p:last-child {
-  margin-top: 4em;         /* descend l’adresse */
-  font-size: 18px;         /* un peu plus que le header */
-  opacity: 0.6;            /* discret mais lisible */
+  margin-top: 2em;          /* descend mais reste dans le flow */
+  font-size: 18px;          /* plus discret que le texte */
+  opacity: 0.6;
   letter-spacing: 1px;
 }
