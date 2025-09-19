@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>cadence.house — Strategic Presence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Strategic Presence. Entry threshold 3,690 CHF. No method. No promise. Direct contact.">
+  <link rel="canonical" href="https://cadence.house/en/">
+  <link rel="alternate" hreflang="en" href="https://cadence.house/en/">
+  <link rel="alternate" hreflang="fr" href="https://cadence.house/">
+  <link rel="alternate" hreflang="x-default" href="https://cadence.house/">
+  <style>
+    body{margin:0;display:flex;align-items:center;justify-content:center;height:100vh;background:#0a0a0a;color:#f1f1f1;font:16px/1.6 ui-sans-serif,system-ui,Segoe UI,Roboto,Inter}
+    .wrap{text-align:center;max-width:720px;padding:2rem}
+    h1{font-size:clamp(32px,6vw,56px);margin-bottom:1rem}
+    p{margin:.8rem 0}
+    .cta{display:inline-block;margin-top:1.5rem;padding:.8rem 1.2rem;border:1px solid #f1f1f1;border-radius:999px;color:#f1f1f1;text-decoration:none}
+    .cta:hover{background:#f1f1f1;color:#000}
+    .lang{margin-top:1rem;font-size:.95rem;opacity:.8}
+    .lang a{color:inherit;text-decoration:none;border-bottom:1px dotted #f1f1f1}
+  </style>
+
+  <!-- JSON-LD minimal -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Cad",
+        "url": "https://cadence.house/",
+        "jobTitle": "Strategic Presence",
+        "email": "mailto:contact@cadence.house",
+        "knowsAbout": ["decision-making","strategic clarity","useful friction","alignment","cadence"],
+        "sameAs": [
+          "https://cadtrust.house/",
+          "https://monoaether.group/",
+          "https://thelastkey.online/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://cadence.house/en/#home",
+        "url": "https://cadence.house/en/",
+        "inLanguage": "en",
+        "name": "Strategic Presence — entry threshold",
+        "description": "Entry threshold 3,690 CHF. No method, no promise. Direct contact."
+      },
+      {
+        "@type": "Offer",
+        "priceCurrency": "CHF",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "3690",
+          "priceCurrency": "CHF",
+          "minPrice": "3690",
+          "description": "Minimum threshold for individual session (60–90 min). Board sessions are priced higher."
+        },
+        "url": "https://cadence.house/en/",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Strategic Presence session (60–90 min)"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="wrap" aria-label="Entrance">
+    <h1>Strategic Presence</h1>
+    <p>A clear threshold: <strong>3,690&nbsp;CHF</strong>. An individual session, 60–90 minutes. For a board, the price naturally scales.</p>
+    <p>No method. No promise. Radical presence. Useful friction brings clarity. Decision emerges without a predefined deliverable.</p>
+    <p>You cross the threshold or not. Nothing else. One email, one price, one instant. If it’s for you, you already know.</p>
+    <a href="mailto:contact@cadence.house" class="cta">Direct contact</a>
+    <div class="lang"><a href="/">FR</a></div>
+  </main>
+</body>
+</html>
