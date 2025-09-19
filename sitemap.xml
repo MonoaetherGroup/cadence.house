@@ -40,7 +40,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/faq.html"/>
   </url>
 
-  <!-- Invisible: client -->
+  <!-- Invisible: client / clients -->
   <url>
     <loc>https://cadence.house/_invisible/client.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/client.html"/>
@@ -62,6 +62,18 @@
     <loc>https://cadence.house/en/_invisible/glossary.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/glossary.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/glossaire.html"/>
+  </url>
+
+  <!-- Invisible: cas typiques / typical cases -->
+  <url>
+    <loc>https://cadence.house/_invisible/cas.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/cas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/cases.html"/>
+  </url>
+  <url>
+    <loc>https://cadence.house/en/_invisible/cases.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/cases.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/cas.html"/>
   </url>
 
 </urlset>
