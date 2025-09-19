@@ -12,13 +12,6 @@ Minimal surface / Surface minimale
 Clear geometry (FR+EN, sitemap, hreflang) / Géométrie claire (FR+EN, sitemap, hreflang)
 Useful friction, clarity, decision / Friction utile, clarté, décision
 
-Structure
-
-/index.html (FR) · /en/index.html (EN)
-/sitemap.xml · /robots.txt · /netlify.toml · .editorconfig · .gitattributes · /README.md
-/_invisible/ (FR): /definition.html · /faq.html · /client.html · /glossaire.html
-/en/_invisible/ (EN): /definition.html · /faq.html · /client.html · /glossary.html
-
 Deployment / Déploiement
 
 Netlify static hosting
