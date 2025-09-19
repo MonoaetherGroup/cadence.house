@@ -1,0 +1,19 @@
+# Ensure consistent line endings across environments
+* text=auto eol=lf
+
+# Treat common web assets as text
+*.html text
+*.css text
+*.js text
+*.json text
+*.xml text
+*.md text
+*.toml text
+
+# Images and binaries stay untouched
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
