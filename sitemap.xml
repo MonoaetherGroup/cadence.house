@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home FR/EN -->
   <url>
     <loc>https://cadence.house/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/"/>
@@ -13,4 +15,53 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cadence.house/"/>
   </url>
+
+  <!-- Invisible: définition / definition -->
+  <url>
+    <loc>https://cadence.house/_invisible/definition.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/definition.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/definition.html"/>
+  </url>
+  <url>
+    <loc>https://cadence.house/en/_invisible/definition.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/definition.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/definition.html"/>
+  </url>
+
+  <!-- Invisible: FAQ -->
+  <url>
+    <loc>https://cadence.house/_invisible/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/faq.html"/>
+  </url>
+  <url>
+    <loc>https://cadence.house/en/_invisible/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/faq.html"/>
+  </url>
+
+  <!-- Invisible: client -->
+  <url>
+    <loc>https://cadence.house/_invisible/client.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/client.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/client.html"/>
+  </url>
+  <url>
+    <loc>https://cadence.house/en/_invisible/client.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/client.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/client.html"/>
+  </url>
+
+  <!-- Invisible: glossaire / glossary -->
+  <url>
+    <loc>https://cadence.house/_invisible/glossaire.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/glossaire.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/glossary.html"/>
+  </url>
+  <url>
+    <loc>https://cadence.house/en/_invisible/glossary.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/glossaire.html"/>
+  </url>
+
 </urlset>
