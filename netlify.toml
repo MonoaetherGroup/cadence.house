@@ -1,10 +1,59 @@
+# ===== Netlify config: cadence.house =====
+
 [build]
   publish = "."
 
+# --- Redirects (propreté des URLs)
+# /en → /en/ (évite le duplicate et fixe les liens)
+[[redirects]]
+  from = "/en"
+  to = "/en/"
+  status = 301
+  force = true
+
+# --- Sécurité & privacy (headers globaux)
 [[headers]]
   for = "/*"
   [headers.values]
+    # Strict-Transport-Security : activer seulement si ton domaine est 100% en HTTPS (Netlify l’est).
+    # NOTE: garde cette directive. Quand tout est OK, tu peux soumettre au preload si tu veux.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     Referrer-Policy = "no-referrer"
-    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    # Bloque la plupart des features navigateur non requises
+    Permissions-Policy = "geolocation=(), camera=(), microphone=(), payment=(), usb=(), interest-cohort=(), browsing-topics=()"
+
+    # CSP stricte mais compatible avec ton HTML inline + mailto
+    # (images locales + data:, pas de JS externe, pas de connexions sortantes)
+    Content-Security-Policy = "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; font-src 'self' data:; upgrade-insecure-requests"
+
+# --- Cache control
+# HTML : pas de cache agressif (tu veux pouvoir pousser des modifs visibles immédiatement)
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+    Pragma = "no-cache"
+    Expires = "0"
+
+# Sitemap : cache doux (6h)
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=21600"
+
+# Robots : cache doux (6h)
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=21600"
+
+# Dossier EN : mêmes règles HTML no-cache
+[[headers]]
+  for = "/en/*.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+    Pragma = "no-cache"
+    Expires = "0"
