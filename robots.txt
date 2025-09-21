@@ -11,18 +11,23 @@ Allow: /atom.xml
 Allow: /graph.jsonld
 Allow: /cad.vcf
 Allow: /_invisible/linkset.json
+Allow: /_invisible/ecosystem.html
+Allow: /en/_invisible/ecosystem.html
 
 # Invisible but intentional / Invisible mais intentionnel
 Allow: /_invisible/
 Disallow: /_drafts/
 
-# -------------------------
+# ----------------------------
 # cadence.house
 # Présence stratégique — Strategic Presence
 # Clarté — Clarity
 # Friction utile — Useful friction
 # Décision — Decision
-# -------------------------
+# ----------------------------
 
 # Note: Everything visible is minimal. Everything invisible is intentional.
 # Remarque : Tout ce qui est visible est minimal. Tout ce qui est invisible est intentionnel.
+
+# Experimental / Expérimental
+Linkset: https://cadence.house/_invisible/linkset.json
