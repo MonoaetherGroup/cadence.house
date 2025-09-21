@@ -80,6 +80,23 @@
       ],
       "url":"https://cadence.house/_invisible/glossaire.html",
       "isPartOf":{"@id":"https://cadence.house/#series"}
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://cadence.house/#trace",
+      "name": "Trace",
+      "inLanguage": ["fr","en"],
+      "description": "Intentional draft signal. Not a draft. A presence.",
+      "url": [
+        "https://cadence.house/_drafts/trace.html",
+        "https://cadence.house/en/_drafts/trace.html"
+      ],
+      "isPartOf": {"@id": "https://cadence.house/#series"},
+      "about": ["glitch","signal","breadcrumb"],
+      "mainEntityOfPage": [
+        {"@type":"WebPage","@id":"https://cadence.house/_drafts/trace.html"},
+        {"@type":"WebPage","@id":"https://cadence.house/en/_drafts/trace.html"}
+      ]
     }
   ]
 }
