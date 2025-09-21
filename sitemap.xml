@@ -116,4 +116,23 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/fractal.html"/>
   </url>
 
+  <!-- Draft traces: intentional glitch pages -->
+  <url>
+    <loc>https://cadence.house/_drafts/trace.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.1</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_drafts/trace.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_drafts/trace.html"/>
+  </url>
+
+  <url>
+    <loc>https://cadence.house/en/_drafts/trace.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.1</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_drafts/trace.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_drafts/trace.html"/>
+  </url>
+
 </urlset>
