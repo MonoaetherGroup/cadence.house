@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>cadence.house — signals</title>
+  <link href="https://cadence.house/atom.xml" rel="self"/>
+  <link href="https://cadence.house/"/>
+  <updated>2025-09-21T00:00:00Z</updated>
+  <id>https://cadence.house/#signals</id>
+  <author><name>Cad</name><email>contact@cadence.house</email></author>
+
+  <entry>
+    <title>The Cadence Memo announced</title>
+    <link href="https://cadence.house/_invisible/memo.html"/>
+    <id>https://cadence.house/#memo-announce</id>
+    <updated>2025-09-21T00:00:00Z</updated>
+    <summary>Reserved synthesis document. Access on request. Threshold: 50,000 CHF.</summary>
+  </entry>
+</feed>
