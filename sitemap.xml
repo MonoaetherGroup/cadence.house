@@ -97,7 +97,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/memo.html"/>
   </url>
 
-  <!-- Fractal: pages de boucle sémantique -->
+<!-- Fractal: pages de boucle sémantique -->
   <url>
     <loc>https://cadence.house/_invisible/fractal.html</loc>
     <lastmod>2025-09-21</lastmod>
@@ -134,6 +134,25 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_drafts/trace.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_drafts/trace.html"/>
     <!-- Loop closed: this trace points to graph.jsonld -->
+  </url>
+
+ <!-- Ecosystem map: FR + EN -->
+  <url>
+    <loc>https://cadence.house/_invisible/ecosystem.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/ecosystem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/ecosystem.html"/>
+  </url>
+
+  <url>
+    <loc>https://cadence.house/en/_invisible/ecosystem.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/ecosystem.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/ecosystem.html"/>
   </url>
 
 </urlset>
