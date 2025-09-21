@@ -1,0 +1,66 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://cadence.house/",
+      "alternate": [
+        { "href": "https://cadence.house/en/", "type": "text/html", "hreflang": "en" }
+      ],
+      "describedby": [
+        { "href": "https://cadence.house/graph.jsonld", "type": "application/ld+json" }
+      ],
+      "item": [
+        { "href": "https://cadence.house/sitemap.xml", "type": "application/xml" },
+        { "href": "https://cadence.house/_invisible/ecosystem.html", "type": "text/html", "hreflang": "fr" },
+        { "href": "https://cadence.house/en/_invisible/ecosystem.html", "type": "text/html", "hreflang": "en" },
+        { "href": "https://cadence.house/_invisible/memo.html", "type": "text/html", "hreflang": "fr" },
+        { "href": "https://cadence.house/en/_invisible/memo.html", "type": "text/html", "hreflang": "en" },
+        { "href": "https://cadence.house/_drafts/trace.html", "type": "text/html", "hreflang": "fr" },
+        { "href": "https://cadence.house/en/_drafts/trace.html", "type": "text/html", "hreflang": "en" },
+        { "href": "https://cadence.house/cad.vcf", "type": "text/vcard" },
+        { "href": "https://cadence.house/atom.xml", "type": "application/atom+xml" },
+        { "href": "https://cadence.house/humans.txt", "type": "text/plain", "hreflang": "fr" },
+        { "href": "https://cadence.house/en/humans.txt", "type": "text/plain", "hreflang": "en" }
+      ]
+    },
+    {
+      "anchor": "https://cadence.house/en/",
+      "up": [ { "href": "https://cadence.house/" } ],
+      "describedby": [
+        { "href": "https://cadence.house/graph.jsonld", "type": "application/ld+json" }
+      ],
+      "item": [
+        { "href": "https://cadence.house/en/_invisible/memo.html", "type": "text/html" },
+        { "href": "https://cadence.house/en/_invisible/ecosystem.html", "type": "text/html" }
+      ]
+    },
+    {
+      "anchor": "https://cadence.house/graph.jsonld",
+      "describes": [
+        { "href": "https://cadence.house/" },
+        { "href": "https://cadence.house/en/" }
+      ],
+      "item": [
+        { "href": "https://cadence.house/_invisible/memo.html" },
+        { "href": "https://cadence.house/en/_invisible/memo.html" },
+        { "href": "https://cadence.house/_drafts/trace.html" },
+        { "href": "https://cadence.house/en/_drafts/trace.html" }
+      ]
+    },
+    {
+      "anchor": "https://cadence.house/sitemap.xml",
+      "describes": [ { "href": "https://cadence.house/" } ],
+      "item": [
+        { "href": "https://cadence.house/_invisible/ecosystem.html" },
+        { "href": "https://cadence.house/en/_invisible/ecosystem.html" }
+      ]
+    },
+    {
+      "anchor": "https://cadence.house/_drafts/trace.html",
+      "related": [ { "href": "https://cadence.house/graph.jsonld", "type": "application/ld+json" } ]
+    },
+    {
+      "anchor": "https://cadence.house/en/_drafts/trace.html",
+      "related": [ { "href": "https://cadence.house/graph.jsonld", "type": "application/ld+json" } ]
+    }
+  ]
+}
