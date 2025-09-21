@@ -1,12 +1,27 @@
 User-agent: *
 Allow: /
 
-# Prevent crawling of Netlify/system files (safety)
-Disallow: /_redirects
-Disallow: /netlify.toml
-Disallow: /.editorconfig
-Disallow: /.gitattributes
-Disallow: /README.md
-
-# Sitemap declaration
+# Sitemap
 Sitemap: https://cadence.house/sitemap.xml
+
+# Signals / Signaux
+Allow: /humans.txt
+Allow: /en/humans.txt
+Allow: /atom.xml
+Allow: /graph.jsonld
+Allow: /cad.vcf
+
+# Invisible but intentional / Invisible mais intentionnel
+Allow: /_invisible/
+Disallow: /_drafts/
+
+# -------------------------
+# cadence.house
+# Présence stratégique — Strategic Presence
+# Clarté — Clarity
+# Friction utile — Useful friction
+# Décision — Decision
+# -------------------------
+
+# Note: Everything visible is minimal. Everything invisible is intentional.
+# Remarque : Tout ce qui est visible est minimal. Tout ce qui est invisible est intentionnel.
