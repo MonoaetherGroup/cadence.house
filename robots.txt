@@ -10,6 +10,7 @@ Allow: /en/humans.txt
 Allow: /atom.xml
 Allow: /graph.jsonld
 Allow: /cad.vcf
+Allow: /_invisible/linkset.json
 
 # Invisible but intentional / Invisible mais intentionnel
 Allow: /_invisible/
