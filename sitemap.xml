@@ -154,5 +154,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/ecosystem.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/ecosystem.html"/>
   </url>
+    
+ <!-- Linkset (IETF RFC 9264) -->
+  <url>
+    <loc>https://cadence.house/_invisible/linkset.json</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.20</priority>
+  </url>
 
 </urlset>
