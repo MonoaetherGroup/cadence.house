@@ -2,17 +2,30 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebSite",
+      "@type": ["WebSite","CreativeWorkSeries"],
       "@id": "https://cadence.house/#site",
       "name": "cadence.house",
       "url": "https://cadence.house/",
       "inLanguage": "fr",
       "availableLanguage": ["fr","en"],
       "publisher": {"@id":"https://cadence.house/#person"},
+      "isPartOf": {"@id":"https://cadence.house/#series"},
       "potentialAction": {
         "@type":"ContactAction",
         "target":{"@type":"EntryPoint","urlTemplate":"mailto:contact@cadence.house"}
-      }
+      },
+      "sameAs": ["https://cadence.house/graph.jsonld"]
+    },
+    {
+      "@type": "CreativeWorkSeries",
+      "@id": "https://cadence.house/#series",
+      "name": "cadence.house — ongoing work",
+      "hasPart": [
+        {"@id":"https://cadence.house/#site"},
+        {"@id":"https://cadence.house/#memo"},
+        {"@id":"https://cadence.house/#lexicon"}
+      ],
+      "url": "https://cadence.house/fractal"
     },
     {
       "@type": "Person",
@@ -65,7 +78,8 @@
         {"@type":"DefinedTerm","name":"Useful friction / Friction utile"},
         {"@type":"DefinedTerm","name":"Decision / Décision"}
       ],
-      "url":"https://cadence.house/_invisible/glossaire.html"
+      "url":"https://cadence.house/_invisible/glossaire.html",
+      "isPartOf":{"@id":"https://cadence.house/#series"}
     }
   ]
 }
