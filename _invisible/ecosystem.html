@@ -2,9 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  </title>écosystème — cadence.house</title>
+  <title>écosystème — cadence.house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
+  <link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/ecosystem.html">
+  <link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/ecosystem.html">
+  <link rel="alternate" type="application/ld+json" href="/graph.jsonld">
   <style>
     body{background:#0a0a0a;color:#f1f1f1;font:15px/1.6 system-ui;margin:24px;display:flex;flex-direction:column;align-items:center}
     svg{margin-top:2rem;max-width:100%;height:auto}
@@ -20,6 +23,7 @@
         "@id": "https://cadence.house/#site",
         "name": "cadence.house",
         "url": "https://cadence.house/",
+        "inLanguage": "fr",
         "isPartOf": {"@id":"https://cadence.house/#series"},
         "hasPart": [
           {"@id":"https://cadence.house/#graph"},
@@ -38,6 +42,7 @@
         "@type": "CreativeWork",
         "@id": "https://cadence.house/#trace",
         "name": "Trace",
+        "inLanguage": ["fr","en"],
         "url": [
           "https://cadence.house/_drafts/trace.html",
           "https://cadence.house/en/_drafts/trace.html"
@@ -54,13 +59,22 @@
       {
         "@type": "CreativeWorkSeries",
         "@id": "https://cadence.house/#series",
-        "name": "cadence.house — ecosystem",
+        "name": "cadence.house — écosystème",
         "hasPart": [
           {"@id":"https://cadence.house/#site"},
           {"@id":"https://cadence.house/#graph"},
           {"@id":"https://cadence.house/#trace"},
           {"@id":"https://cadence.house/#sitemap"}
         ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://cadence.house/#ecosystem-diagram",
+        "name": "Carte de l’écosystème (SVG)",
+        "inLanguage": "fr",
+        "encodingFormat": "image/svg+xml",
+        "isPartOf": {"@id":"https://cadence.house/#series"},
+        "mainEntityOfPage": {"@type":"WebPage","@id":"https://cadence.house/_invisible/ecosystem.html"}
       }
     ]
   }
@@ -68,7 +82,7 @@
 </head>
 <body>
   <h1>écosystème</h1>
-  <p>Site, Graph, Trace, Sitemap. Boucles fermées. Présence cartographiée.</p>
+  <p>Site, Graphe, Trace, Sitemap. Boucles fermées. Présence cartographiée.</p>
 
   <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" font-family="monospace" font-size="14">
     <rect width="100%" height="100%" fill="#0a0a0a"/>
