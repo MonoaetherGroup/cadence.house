@@ -1,79 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  cadence.house — avant-garde sitemap
+  - Proportions et priorités inspirées du nombre d'or (φ ≈ 0.618) et de Fibonacci.
+  - Lisible par les machines. Intentionnelle pour les humains curieux.
+  - Ne publie pas le PDF du Cadence Memo (accès sur demande).
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Home FR/EN -->
+  <!-- HOME / FR -->
   <url>
     <loc>https://cadence.house/</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <!-- Priority tuned on golden ratio scale (home = high presence) -->
+    <priority>0.89</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cadence.house/"/>
+    <image:image>
+      <image:loc>https://cadence.house/og.jpg</image:loc>
+      <image:caption>cadence.house — Présence stratégique / Strategic Presence</image:caption>
+    </image:image>
   </url>
+
+  <!-- HOME / EN -->
   <url>
     <loc>https://cadence.house/en/</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.79</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cadence.house/"/>
   </url>
 
-  <!-- Invisible: définition / definition -->
+  <!-- Invisible: definition -->
   <url>
     <loc>https://cadence.house/_invisible/definition.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <!-- priority tuned to φ^2 for lexical anchors -->
+    <priority>0.38</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/definition.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/definition.html"/>
-  </url>
-  <url>
-    <loc>https://cadence.house/en/_invisible/definition.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/definition.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/definition.html"/>
   </url>
 
-  <!-- Invisible: FAQ -->
+  <!-- Invisible: faq -->
   <url>
     <loc>https://cadence.house/_invisible/faq.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/faq.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/faq.html"/>
-  </url>
-  <url>
-    <loc>https://cadence.house/en/_invisible/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/faq.html"/>
   </url>
 
-  <!-- Invisible: client / clients -->
+  <!-- Invisible: client -->
   <url>
     <loc>https://cadence.house/_invisible/client.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/client.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/client.html"/>
-  </url>
-  <url>
-    <loc>https://cadence.house/en/_invisible/client.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/client.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/client.html"/>
   </url>
 
   <!-- Invisible: glossaire / glossary -->
   <url>
     <loc>https://cadence.house/_invisible/glossaire.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.34</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/glossaire.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/glossary.html"/>
-  </url>
-  <url>
-    <loc>https://cadence.house/en/_invisible/glossary.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/glossary.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/glossaire.html"/>
   </url>
 
   <!-- Invisible: cas typiques / typical cases -->
   <url>
     <loc>https://cadence.house/_invisible/cas.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.42</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/cas.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/cases.html"/>
   </url>
+
+  <!-- Memo (hybrid) : declared, price, access-on-request; indexable but no file link -->
+  <url>
+    <loc>https://cadence.house/_invisible/memo.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <!-- high semantic weight but intentionally non-downloadable -->
+    <priority>0.62</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/memo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/memo.html"/>
+  </url>
+
+  <!-- Invisible: cases EN mirror -->
   <url>
     <loc>https://cadence.house/en/_invisible/cases.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.42</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/cases.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/cas.html"/>
   </url>
+
+  <!-- Invisible: memo EN mirror -->
+  <url>
+    <loc>https://cadence.house/en/_invisible/memo.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.62</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/memo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/memo.html"/>
+  </url>
+
+  <!-- Bonus: machine-read affordance (hidden meta entry for crawlers that parse text nodes) -->
+  <!-- This is intentionally a human-readable comment that also contains keywords crawlers will find in the sitemap file itself. -->
+  <!-- cadence.house | presence | clarity | decision | friction utile | strategic presence | The Cadence Memo (50k) -->
 
 </urlset>
