@@ -1,0 +1,12 @@
+/* TEAM */
+Owner: Cad
+Contact: contact@cadence.house
+
+/* PHILOSOPHY */
+Strategic presence. Clarity. Useful friction. Decision.
+
+/* THRESHOLD */
+Entry: 3,690 CHF — Memo: 50,000 CHF
+
+/* SITE */
+Stack: static HTML, Netlify
