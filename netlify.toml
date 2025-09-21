@@ -41,3 +41,16 @@
   [headers.values]
     Content-Type = "application/atom+xml; charset=utf-8"
     Cache-Control = "public, max-age=3600"
+
+# Annonce universelle du Linkset (RFC 9264)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Link = "</_invisible/linkset.json>; rel=\"linkset\"; type=\"application/linkset+json\""
+
+# Type + cache pour le linkset
+[[headers]]
+  for = "/_invisible/linkset.json"
+  [headers.values]
+    Content-Type = "application/linkset+json; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
