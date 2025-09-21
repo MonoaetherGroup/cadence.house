@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>404 — cadence.house</title>
+<style>
+  :root{--bg:#0a0a0a;--fg:#f1f1f1;--muted:#999}
+  body{display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui}
+  main{text-align:center;padding:2rem}
+  .glitch{position:relative;display:inline-block;font-size:clamp(24px,5vw,40px)}
+  .glitch::before,.glitch::after{content:attr(data-text);position:absolute;left:0;top:0;opacity:.6;mix-blend-mode:screen}
+  .glitch::before{color:#ff3b30;transform:translateX(-2px) skewX(-2deg)}
+  .glitch::after{color:#00d4ff;transform:translateX(2px) skewX(2deg)}
+  a{color:var(--fg);border-bottom:1px solid var(--fg);text-decoration:none}
+  .hint{margin-top:1rem;color:var(--muted);font-size:.9rem}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"404 — Out of frame",
+  "inLanguage":"en",
+  "url":"https://cadence.house/en/404.html",
+  "about":["404 error","out of frame","strategic presence"],
+  "isPartOf":{"@type":"WebSite","name":"cadence.house","url":"https://cadence.house/"},
+  "potentialAction":{
+    "@type":"ViewAction",
+    "target":{"@type":"EntryPoint","urlTemplate":"https://cadence.house/en/"}
+  }
+}
+</script>
+</head>
+<body>
+  <main>
+    <h1 class="glitch" data-text="Out of frame">Out of frame</h1>
+    <p>Here, there is nothing. Except presence.</p>
+    <p><a href="/en/">Back</a></p>
+    <div class="hint">cadence.house — strategic presence</div>
+  </main>
+</body>
+</html>
