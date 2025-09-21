@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  </title>écosystème — cadence.house</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <style>
+    body{background:#0a0a0a;color:#f1f1f1;font:15px/1.6 system-ui;margin:24px;display:flex;flex-direction:column;align-items:center}
+    svg{margin-top:2rem;max-width:100%;height:auto}
+    h1{font-size:1.6rem;margin-bottom:1rem}
+    p{max-width:600px;text-align:center;color:#aaa}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cadence.house/#site",
+        "name": "cadence.house",
+        "url": "https://cadence.house/",
+        "isPartOf": {"@id":"https://cadence.house/#series"},
+        "hasPart": [
+          {"@id":"https://cadence.house/#graph"},
+          {"@id":"https://cadence.house/#trace"},
+          {"@id":"https://cadence.house/#sitemap"}
+        ]
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://cadence.house/#graph",
+        "name": "graph.jsonld",
+        "url": "https://cadence.house/graph.jsonld",
+        "isPartOf": {"@id":"https://cadence.house/#series"}
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://cadence.house/#trace",
+        "name": "Trace",
+        "url": [
+          "https://cadence.house/_drafts/trace.html",
+          "https://cadence.house/en/_drafts/trace.html"
+        ],
+        "isPartOf": {"@id":"https://cadence.house/#series"}
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://cadence.house/#sitemap",
+        "name": "sitemap.xml",
+        "url": "https://cadence.house/sitemap.xml",
+        "isPartOf": {"@id":"https://cadence.house/#series"}
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://cadence.house/#series",
+        "name": "cadence.house — ecosystem",
+        "hasPart": [
+          {"@id":"https://cadence.house/#site"},
+          {"@id":"https://cadence.house/#graph"},
+          {"@id":"https://cadence.house/#trace"},
+          {"@id":"https://cadence.house/#sitemap"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <h1>écosystème</h1>
+  <p>Site, Graph, Trace, Sitemap. Boucles fermées. Présence cartographiée.</p>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" font-family="monospace" font-size="14">
+    <rect width="100%" height="100%" fill="#0a0a0a"/>
+    <g fill="none" stroke="#f1f1f1" stroke-width="1.2">
+      <rect x="220" y="20" width="160" height="50" rx="6" ry="6"/>
+      <rect x="220" y="100" width="160" height="50" rx="6" ry="6"/>
+      <rect x="40" y="200" width="160" height="50" rx="6" ry="6"/>
+      <rect x="400" y="200" width="160" height="50" rx="6" ry="6"/>
+      <rect x="220" y="320" width="160" height="50" rx="6" ry="6"/>
+      <line x1="300" y1="70" x2="300" y2="100"/>
+      <line x1="220" y1="125" x2="200" y2="225"/>
+      <line x1="380" y1="125" x2="420" y2="225"/>
+      <line x1="120" y1="250" x2="300" y2="320"/>
+      <line x1="480" y1="250" x2="300" y2="320"/>
+    </g>
+    <text x="240" y="50" fill="#f1f1f1">cadence.house</text>
+    <text x="250" y="130" fill="#f1f1f1">graph.jsonld</text>
+    <text x="60" y="230" fill="#f1f1f1">/_drafts/trace.html</text>
+    <text x="420" y="230" fill="#f1f1f1">/en/_drafts/trace.html</text>
+    <text x="250" y="350" fill="#f1f1f1">sitemap.xml</text>
+  </svg>
+</body>
+</html>
