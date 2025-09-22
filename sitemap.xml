@@ -124,7 +124,8 @@
     <priority>0.1</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_drafts/trace.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_drafts/trace.html"/>
-    
+  </url>
+  
     <!-- Boucle fermée: cette trace pointe vers graph.jsonld -->
   <url>
     <loc>https://cadence.house/en/_drafts/trace.html</loc>
