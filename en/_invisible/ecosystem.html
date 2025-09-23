@@ -34,9 +34,12 @@
       {
         "@type": "Dataset",
         "@id": "https://cadence.house/#graph",
-        "name": "graph.jsonld",
+        "name": "cadence.house — graph.jsonld",
+        "description": "Minimal semantic graph for cadence.house: Site ↔ Trace ↔ Sitemap ↔ Ecosystem relations for machine observation.",
         "url": "https://cadence.house/graph.jsonld",
-        "isPartOf": {"@id":"https://cadence.house/#series"}
+        "isPartOf": { "@id": "https://cadence.house/#site" },
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": { "@type": "Person", "name": "Cad", "email": "contact@cadence.house" }
       },
       {
         "@type": "CreativeWork",
@@ -64,8 +67,7 @@
           {"@id":"https://cadence.house/#site"},
           {"@id":"https://cadence.house/#graph"},
           {"@id":"https://cadence.house/#trace"},
-          {"@id":"https://cadence.house/#sitemap"},
-          {"@id":"https://cadence.house/#ecosystem-diagram-en"}
+          {"@id":"https://cadence.house/#sitemap"}
         ]
       },
       {
