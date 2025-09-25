@@ -1,6 +1,7 @@
 cadence.house
 
 Strategic Presence / Présence stratégique
+
 One page for humans. A few auxiliary pages for machines / Une page pour les humains. Quelques pages auxiliaires pour les machines
 
 Entry threshold / Seuil d’entrée : 3 690 CHF
