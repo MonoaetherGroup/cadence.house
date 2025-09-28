@@ -1,36 +1,95 @@
-<!doctype html><html lang="fr"><head>
-<meta charset="utf-8">
-<title>cadence.house — Présence stratégique</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Présence stratégique. Clarté. Friction utile. Seuil 3 690 CHF. Contact direct : contact@cadence.house">
-<link rel="canonical" href="https://cadence.house/">
-<link rel="alternate" hreflang="en" href="https://cadence.house/en/">
-<link rel="alternate" hreflang="fr" href="https://cadence.house/">
-<link rel="alternate" hreflang="x-default" href="https://cadence.house/">
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>cadence.house — Présence stratégique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Glitch propre : graph JSON-LD externe + identités -->
-<link rel="alternate" type="application/ld+json" href="/graph.jsonld">
-<link rel="author" href="/cad.vcf">
-<link rel="me" href="mailto:contact@cadence.house">
-<link rel="index" href="/graph.jsonld">
-<link rel="chapter" href="/_invisible/memo.html">
+  <!-- Snippet -->
+  <meta name="description" content="Présence stratégique hors-cadre. Pas de méthode, pas de promesse. Une session suffit pour que tout bascule. cadence.house"/>
 
-<!-- Open Graph / Twitter -->
-<meta property="og:title" content="cadence.house — Présence stratégique">
-<meta property="og:description" content="Seuil 3 690 CHF. Aucune méthode. Aucune promesse. Contact direct.">
-<meta property="og:image" content="https://cadence.house/og.jpg">
-<meta property="og:url" content="https://cadence.house/">
-<meta name="twitter:card" content="summary_large_image">
+  <!-- Canonical & i18n -->
+  <link rel="canonical" href="https://cadence.house/">
+  <link rel="alternate" hreflang="fr" href="https://cadence.house/">
+  <link rel="alternate" hreflang="en" href="https://cadence.house/en/">
+  <link rel="alternate" hreflang="x-default" href="https://cadence.house/">
 
-<style>body{font:16px/1.6 system-ui;margin:24px;max-width:720px}h1{letter-spacing:.2px}</style>
+  <!-- Discrete signals -->
+  <link rel="author" href="/cad.vcf">
+  <link rel="me" href="mailto:contact@cadence.house">
+  <link rel="index" href="/graph.jsonld">
+  <link rel="related" href="https://medium.com/@cadence-house" hreflang="x-default">
 
-<!-- Speakable: phrase clé -->
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"cadence.house — FR","inLanguage":"fr","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1","p:nth-of-type(1)"]}}
-</script>
-</head><body>
-<h1>cadence.house</h1>
-<p><strong>Présence stratégique.</strong> Clarté. Friction utile. Décision.</p>
-<p><strong>Seuil :</strong> 3 690&nbsp;CHF (60–90&nbsp;min). Les sessions de board sont facturées plus haut.</p>
-<p><a href="mailto:contact@cadence.house">contact@cadence.house</a></p>
-</body></html>
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="cadence.house — Présence stratégique">
+  <meta property="og:description" content="Seuil 2 500 CHF (60–90 min). Sessions de board facturées plus haut.">
+  <meta property="og:image" content="https://cadence.house/og.jpg">
+  <meta property="og:url" content="https://cadence.house/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- JSON-LD : WebSite + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cadence.house/#website",
+        "url": "https://cadence.house/",
+        "name": "cadence.house",
+        "inLanguage": "fr",
+        "description": "Présence stratégique hors-cadre. Clarté. Friction utile.",
+        "publisher": { "@id": "https://cadence.house/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://cadence.house/#organization",
+        "name": "Cad",
+        "url": "https://cadence.house/",
+        "email": "contact@cadence.house",
+        "logo": "https://cadence.house/logo.svg",
+        "sameAs": [
+          "mailto:contact@cadence.house",
+          "https://medium.com/@cadence-house"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a0a0a; /* adapte à la couleur de fond du logo */
+      --text:#f1f1f1;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+    }
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+    .wrap{max-width:720px}
+    h1{font-size:2rem;margin:1rem 0}
+    p{margin:0.5rem 0}
+    .logo{width:80px;height:auto;margin:0 auto 1rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="logo" src="/logo.svg" alt="cadence.house">
+    <h1>cadence.house</h1>
+
+    <p><strong>Présence stratégique.</strong> Clarté. Friction utile.</p>
+    <p><strong>Seuil :</strong> 2 500&nbsp;CHF (60–90&nbsp;min). Les sessions de board sont facturées plus haut.</p>
+    <p>contact@cadence.house</p>
+  </div>
+</body>
+</html>
