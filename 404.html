@@ -1,42 +1,34 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>404 — cadence.house</title>
-<style>
-  :root{--bg:#0a0a0a;--fg:#f1f1f1;--muted:#999}
-  body{display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui}
-  main{text-align:center;padding:2rem}
-  .glitch{position:relative;display:inline-block;font-size:clamp(24px,5vw,40px)}
-  .glitch::before,.glitch::after{content:attr(data-text);position:absolute;left:0;top:0;opacity:.6;mix-blend-mode:screen}
-  .glitch::before{color:#ff3b30;transform:translateX(-2px) skewX(-2deg)}
-  .glitch::after{color:#00d4ff;transform:translateX(2px) skewX(2deg)}
-  a{color:var(--fg);border-bottom:1px solid var(--fg);text-decoration:none}
-  .hint{margin-top:1rem;color:var(--muted);font-size:.9rem}
-</style>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebPage",
-  "name":"404 — Hors du cadre",
-  "inLanguage":"fr",
-  "url":"https://cadence.house/404.html",
-  "about":["erreur 404","hors-cadre","présence stratégique"],
-  "isPartOf":{"@type":"WebSite","name":"cadence.house","url":"https://cadence.house/"},
-  "potentialAction":{
-    "@type":"ViewAction",
-    "target":{"@type":"EntryPoint","urlTemplate":"https://cadence.house/"}
-  }
-}
-</script>
+  <meta charset="utf-8">
+  <title>Page introuvable – cadence.house</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background:#1c1b1b;
+      color:#f5f5f5;
+      font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      margin:0;
+      text-align:center;
+    }
+    main {
+      max-width:600px;
+      padding:24px;
+    }
+    h1 { font-size:1.8rem; margin-bottom:16px; }
+    p { margin:8px 0; }
+  </style>
 </head>
 <body>
   <main>
-    <h1 class="glitch" data-text="Hors du cadre">Hors du cadre</h1>
-    <p>Ici, il n’y a rien. Sauf une présence.</p>
-    <p><a href="/">Retour</a></p>
-    <div class="hint">cadence.house — présence stratégique</div>
+    <h1>404</h1>
+    <p>Cette page n’existe pas.</p>
+    <p><a href="/" style="color:#f5f5f5;text-decoration:none;">Retour à cadence.house</a></p>
   </main>
 </body>
 </html>
