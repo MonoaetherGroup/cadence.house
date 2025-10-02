@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>cadence.house — Présence stratégique</title>
+  <title>cadence.house — Présence</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Snippet -->
-  <meta name="description" content="Présence stratégique hors-cadre. Pas de méthode, pas de promesse. Une session suffit pour que tout bascule. cadence.house"/>
+  <meta name="description" content="Présence. Silence. Différence. Seuil d'accès: 2 500 CHF. cadence.house"/>
 
   <!-- Canonical & i18n -->
   <link rel="canonical" href="https://cadence.house/">
@@ -21,8 +21,8 @@
   <link rel="related" href="https://medium.com/@cadence-house" hreflang="x-default">
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="cadence.house — Présence stratégique">
-  <meta property="og:description" content="Seuil 2 500 CHF (60–90 min). Sessions de board facturées plus haut.">
+  <meta property="og:title" content="cadence.house — Présence">
+  <meta property="og:description" content="Présence. Silence. Différence. Seuil d'accès: 2 500 CHF.">
   <meta property="og:image" content="https://cadence.house/og.jpg">
   <meta property="og:url" content="https://cadence.house/">
   <meta property="og:type" content="website">
@@ -39,7 +39,7 @@
         "url": "https://cadence.house/",
         "name": "cadence.house",
         "inLanguage": "fr",
-        "description": "Présence stratégique hors-cadre. Clarté. Friction utile.",
+        "description": "Présence. Silence. Différence.",
         "publisher": { "@id": "https://cadence.house/#organization" }
       },
       {
@@ -48,7 +48,7 @@
         "name": "Cad",
         "url": "https://cadence.house/",
         "email": "contact@cadence.house",
-        "logo": "https://cadence.house/logo.svg",
+        "logo": "https://cadence.house/logo.png",
         "sameAs": [
           "mailto:contact@cadence.house",
           "https://medium.com/@cadence-house"
@@ -60,36 +60,44 @@
 
   <style>
     :root{
-      --bg:#0a0a0a; /* adapte à la couleur de fond du logo */
+      /* Remplace la valeur par le fond de ton logo (ex: #0a0a0a, #ffffff, etc.) */
+      --bg:#0a0a0a;
       --text:#f1f1f1;
     }
-    html,body{
-      height:100%;
-      margin:0;
-    }
+    html,body{height:100%;margin:0}
     body{
-      background:var(--bg);
+      background:var(--bg); /* pas de carrelage, teinte pleine */
       color:var(--text);
       font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
+      display:flex; flex-direction:column; align-items:center;
     }
-    .wrap{max-width:720px}
-    h1{font-size:2rem;margin:1rem 0}
-    p{margin:0.5rem 0}
-    .logo{width:80px;height:auto;margin:0 auto 1rem}
+    main{
+      width:100%; max-width:780px;
+      padding:8vh 24px 24px; /* logo en-haut, mais pas collé */
+      text-align:center;
+      margin:0 auto;
+    }
+    .logo{width:92px;height:auto;display:block;margin:0 auto 20px}
+    h1{font-size:2rem; margin:0 0 8px}
+    p{margin:8px 0}
+    .block{white-space:pre-line; margin:18px 0 10px}
+    .mail{letter-spacing:0.3px; user-select:text}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <img class="logo" src="/logo.svg" alt="cadence.house">
+  <main>
+    <img class="logo" src="/logo.png" alt="cadence.house">
     <h1>cadence.house</h1>
 
-    <p><strong>Présence stratégique.</strong> Clarté. Friction utile.</p>
-    <p><strong>Seuil :</strong> 2 500&nbsp;CHF (60–90&nbsp;min). Les sessions de board sont facturées plus haut.</p>
-    <p>contact@cadence.house</p>
-  </div>
+    <p class="block">Présence.
+Silence.
+Différence.</p>
+
+    <p>Si vous lisez ceci, vous savez pourquoi.<br>Sinon rien.</p>
+
+    <p><strong>Seuil d'accès:</strong> 2&nbsp;500&nbsp;CHF.</p>
+
+    <p class="mail">contact@cadence.house</p>
+  </main>
 </body>
 </html>
