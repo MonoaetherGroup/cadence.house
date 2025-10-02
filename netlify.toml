@@ -54,3 +54,10 @@
   [headers.values]
     Content-Type = "application/linkset+json; charset=utf-8"
     Cache-Control = "public, max-age=86400"
+
+# Forcer le domaine canonique (OK pour GSC)
+[[redirects]]
+  from = "https://www.cadence.house/*"
+  to = "https://cadence.house/:splat"
+  status = 301
+  force = true
