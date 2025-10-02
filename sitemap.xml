@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- cadence.house — sitemap harmonique -->
+<!-- cadence.house — sitemap harmonique (FR/EN) -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- Landing FR -->
   <url>
     <loc>https://cadence.house/</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.89</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/"/>
@@ -15,19 +16,21 @@
     <image:image><image:loc>https://cadence.house/og.jpg</image:loc></image:image>
   </url>
 
+  <!-- Landing EN -->
   <url>
     <loc>https://cadence.house/en/</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.79</priority>
+    <priority>0.80</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cadence.house/"/>
   </url>
 
+  <!-- Invisible FR -->
   <url>
     <loc>https://cadence.house/_invisible/definition.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.38</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/definition.html"/>
@@ -36,7 +39,7 @@
 
   <url>
     <loc>https://cadence.house/_invisible/faq.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/faq.html"/>
@@ -45,7 +48,7 @@
 
   <url>
     <loc>https://cadence.house/_invisible/client.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/client.html"/>
@@ -54,7 +57,7 @@
 
   <url>
     <loc>https://cadence.house/_invisible/glossaire.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.34</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/glossaire.html"/>
@@ -63,7 +66,7 @@
 
   <url>
     <loc>https://cadence.house/_invisible/cas.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.42</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/cas.html"/>
@@ -72,7 +75,7 @@
 
   <url>
     <loc>https://cadence.house/_invisible/memo.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.62</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/memo.html"/>
@@ -80,8 +83,63 @@
   </url>
 
   <url>
+    <loc>https://cadence.house/_invisible/fractal.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.33</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/fractal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/fractal.html"/>
+  </url>
+
+  <url>
+    <loc>https://cadence.house/_invisible/ecosystem.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.20</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/ecosystem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/ecosystem.html"/>
+  </url>
+
+  <!-- Invisible EN -->
+  <url>
+    <loc>https://cadence.house/en/_invisible/definition.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.38</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/definition.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/definition.html"/>
+  </url>
+
+  <url>
+    <loc>https://cadence.house/en/_invisible/faq.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/faq.html"/>
+  </url>
+
+  <url>
+    <loc>https://cadence.house/en/_invisible/client.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/client.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/client.html"/>
+  </url>
+
+  <url>
+    <loc>https://cadence.house/en/_invisible/glossary.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.34</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/glossaire.html"/>
+  </url>
+
+  <url>
     <loc>https://cadence.house/en/_invisible/cases.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.42</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/cases.html"/>
@@ -90,78 +148,72 @@
 
   <url>
     <loc>https://cadence.house/en/_invisible/memo.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.62</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/memo.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/memo.html"/>
   </url>
 
-<!-- Fractal: pages de boucle sémantique -->
-  <url>
-    <loc>https://cadence.house/_invisible/fractal.html</loc>
-    <lastmod>2025-09-21</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.33</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/fractal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/fractal.html"/>
-  </url>
-
   <url>
     <loc>https://cadence.house/en/_invisible/fractal.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.33</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/fractal.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/fractal.html"/>
-  </url>
-
- <!-- Draft traces: intentional glitch pages -->
-  <url>
-    <loc>https://cadence.house/_drafts/trace.html</loc>
-    <lastmod>2025-09-21</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.1</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_drafts/trace.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_drafts/trace.html"/>
-  </url>
-  
-    <!-- Boucle fermée: cette trace pointe vers graph.jsonld -->
-  <url>
-    <loc>https://cadence.house/en/_drafts/trace.html</loc>
-    <lastmod>2025-09-21</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_drafts/trace.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_drafts/trace.html"/>
-    <!-- Loop closed: this trace points to graph.jsonld -->
-  </url>
-
- <!-- Ecosystem map: FR + EN -->
-  <url>
-    <loc>https://cadence.house/_invisible/ecosystem.html</loc>
-    <lastmod>2025-09-21</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/ecosystem.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/ecosystem.html"/>
   </url>
 
   <url>
     <loc>https://cadence.house/en/_invisible/ecosystem.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.20</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_invisible/ecosystem.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_invisible/ecosystem.html"/>
   </url>
-    
- <!-- Linkset (IETF RFC 9264) -->
+
+  <!-- Draft traces -->
+  <url>
+    <loc>https://cadence.house/_drafts/trace.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.10</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_drafts/trace.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_drafts/trace.html"/>
+  </url>
+
+  <url>
+    <loc>https://cadence.house/en/_drafts/trace.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.10</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cadence.house/en/_drafts/trace.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cadence.house/_drafts/trace.html"/>
+  </url>
+
+  <!-- Linkset -->
   <url>
     <loc>https://cadence.house/_invisible/linkset.json</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2025-10-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.20</priority>
+  </url>
+
+  <!-- 404 FR -->
+  <url>
+    <loc>https://cadence.house/404.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.05</priority>
+  </url>
+
+  <!-- 404 EN -->
+  <url>
+    <loc>https://cadence.house/en/404.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.05</priority>
   </url>
 
 </urlset>
