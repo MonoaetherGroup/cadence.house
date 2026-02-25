@@ -2,106 +2,282 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>cadence.house — Présence</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Snippet -->
-  <meta name="description" content="Présence. Rien d’autre. Seuil: 2 500 CHF."/>
-  
-  <!-- Canonical & i18n -->
+  <title>Analyse de Cohérence — cadence.house</title>
+  <meta name="description" content="Analyse de Cohérence : discipline descriptive sous contraintes. Décrire un système tel qu’il fonctionne réellement, sans prescrire, orienter, recommander ni produire de stratégie.">
+  <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://cadence.house/">
+
+  <!-- Alternates -->
   <link rel="alternate" hreflang="fr" href="https://cadence.house/">
   <link rel="alternate" hreflang="en" href="https://cadence.house/en/">
   <link rel="alternate" hreflang="x-default" href="https://cadence.house/">
 
-  <!-- Discrete signals -->
-  <link rel="author" href="/cad.vcf">
-  <link rel="me" href="mailto:contact@cadence.house">
-  <link rel="index" href="/graph.jsonld">
-  <link rel="related" href="https://medium.com/@cadence-house" hreflang="x-default">
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="cadence.house — Présence">
-  <meta property="og:description" content="Présence. Silence. Différence. Seuil d'accès: 2 500 CHF.">
-  <meta property="og:image" content="https://cadence.house/og.jpg">
-  <meta property="og:url" content="https://cadence.house/">
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="Analyse de Cohérence — cadence.house">
+  <meta property="og:description" content="Discipline descriptive sous contraintes. Cartographie rigoureuse d’un régime en place. Aucune prescription.">
+  <meta property="og:url" content="https://cadence.house/">
+  <meta property="og:image" content="https://cadence.house/og.jpg">
 
-  <!-- JSON-LD : WebSite + Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://cadence.house/#website",
-        "url": "https://cadence.house/",
-        "name": "cadence.house",
-        "inLanguage": "fr",
-        "description": "Présence. Silence. Différence.",
-        "publisher": { "@id": "https://cadence.house/#organization" }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://cadence.house/#organization",
-        "name": "Cad",
-        "url": "https://cadence.house/",
-        "email": "contact@cadence.house",
-        "logo": "https://cadence.house/logo.png",
-        "sameAs": [
-          "mailto:contact@cadence.house",
-          "https://medium.com/@cadence-house"
-        ]
-      }
-    ]
-  }
-  </script>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Analyse de Cohérence — cadence.house">
+  <meta name="twitter:description" content="Discipline descriptive sous contraintes. Cartographie rigoureuse. Sans prescription.">
+  <meta name="twitter:image" content="https://cadence.house/og.jpg">
+
+  <!-- Related -->
+  <link rel="related" href="https://medium.com/" title="Medium">
 
   <style>
     :root{
-      --bg:#1c1b1b;
-      --text:#f5f5f5;
+      --bg:#1c1b1b;         /* ajuste si tu veux coller au fond exact du logo */
+      --fg:#f2f2f2;
+      --muted:#b7b7b7;
+      --line:rgba(242,242,242,.14);
     }
-    html,body{height:100%;margin:0}
+
+    html,body{height:100%}
     body{
+      margin:0;
       background:var(--bg);
-      color:var(--text);
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-      display:flex; flex-direction:column; align-items:center;
+      color:var(--fg);
+      font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      letter-spacing:.01em;
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
-    main{
-      width:100%; max-width:780px;
-      padding:8vh 24px 24px;
+
+    .plaque{
+      width:min(980px, calc(100% - 36px));
+      padding:44px 34px 30px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:0 10px 40px rgba(0,0,0,.28);
       text-align:center;
-      margin:0 auto;
     }
-    .logo{width:125px;height:auto;display:block;margin:0 auto 20px}
-    h1{font-size:2rem; margin:0 0 8px}
-    p{margin:8px 0}
-    .block{white-space:pre-line; margin:18px 0 10px}
-    .mail{letter-spacing:0.3px; user-select:text}
-    a.presence-link {
-      text-decoration:none;
-      color:inherit;
+
+    .logo{
+      display:block;
+      width:180px;
+      max-width:48vw;
+      height:auto;
+      margin:0 auto 22px;
+      opacity:.95;
+    }
+
+    h1{
+      font-size:clamp(22px, 3.4vw, 34px);
+      margin:0 0 6px;
+      font-weight:650;
+      letter-spacing:.03em;
+      text-transform:none;
+    }
+
+    .sub{
+      margin:0 0 28px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .content{
+      text-align:left;
+      margin:0 auto;
+      max-width:780px;
+      white-space:pre-line; /* conserve tes retours à la ligne */
+    }
+
+    .content h2{
+      font-size:15px;
+      margin:22px 0 6px;
+      font-weight:650;
+      letter-spacing:.02em;
+      text-transform:none;
+    }
+
+    .content p{
+      margin:0 0 10px;
+      color:var(--fg);
+    }
+
+    .content .muted{
+      color:var(--muted);
+    }
+
+    .rule{
+      height:1px;
+      background:var(--line);
+      margin:22px 0;
+    }
+
+    footer{
+      margin-top:22px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
+    }
+
+    .contact{
+      margin-top:6px;
+      color:var(--fg);
+      opacity:.92;
+      font-weight:520;
+      letter-spacing:.02em;
+    }
+
+    /* discret, mais présent */
+    .sig{
+      margin-top:10px;
+      font-size:12px;
+      color:rgba(242,242,242,.40);
+    }
+
+    @media (max-width:520px){
+      .plaque{padding:34px 18px 24px;border-radius:16px}
+      .content{white-space:normal}
+      .content .block{white-space:pre-line}
     }
   </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Analyse de Cohérence",
+    "url":"https://cadence.house/",
+    "inLanguage":"fr",
+    "isPartOf":{"@type":"WebSite","name":"cadence.house","url":"https://cadence.house/"},
+    "publisher":{"@type":"Person","name":"Cad","url":"https://cadence.house/"},
+    "description":"Discipline descriptive sous contraintes. Cartographie rigoureuse d’un régime en place. Sans prescription ni stratégie."
+  }
+  </script>
 </head>
+
 <body>
-  <main>
-    <img class="logo" src="/logo.png" alt="cadence.house">
+  <main class="plaque" role="main" aria-label="Analyse de Cohérence">
+    <!-- Logo -->
+    <img class="logo" src="/logo.svg" alt="cadence.house">
 
-    <p class="block">
-      <a href="https://medium.com/@cadence-house/presence" target="_blank" rel="noopener" class="presence-link">Présence</a>.
-      Silence.
-      Différence.
-    </p>
+    <h1>Analyse de Cohérence</h1>
+    <p class="sub">(Discipline structurelle sous contraintes)</p>
 
-    <p>Si vous lisez ceci, vous savez pourquoi.<br>Sinon, rien.</p>
-    
-    <p><strong>Seuil d'accès:</strong> 2&nbsp;500&nbsp;CHF.</p>
+    <div class="content">
+      <h2>Nature</h2>
+      <p class="block">L’analyse de cohérence est une discipline descriptive.
+Elle ne prescrit pas.
+Elle n’oriente pas.
+Elle ne recommande pas.
+Elle ne produit pas de stratégie.
+Elle décrit un système tel qu’il fonctionne réellement sous ses contraintes actuelles.
+Elle établit une cartographie rigoureuse du régime en place.</p>
 
-    <p class="mail">contact@cadence.house</p>
+      <h2>Objet</h2>
+      <p class="block">Une analyse de cohérence vise à identifier :
+Les hypothèses implicites qui structurent la situation.
+Les contraintes réellement opérantes (et non déclarées).
+Les dépendances critiques.
+Les boucles de stabilisation ou d’amplification.
+Les zones de fragilité.
+Le domaine de validité du système observé.
+Elle qualifie un état à un instant donné.
+Elle ne juge pas cet état.
+Elle ne l’évalue pas moralement.
+Elle ne le compare pas à un idéal.</p>
+
+      <h2>Volet structurel</h2>
+      <p class="block">Le volet structurel répond à une question simple :
+Pourquoi la configuration est-elle exactement ce qu’elle est ?
+Il formalise :
+Les invariants.
+Les frictions internes.
+Les dépendances cachées.
+Les points de tension.
+Les hypothèses centrales.
+Chaque élément doit être traçable à des faits observables ou à des mécanismes identifiables.
+Les interprétations sont distinguées des observations.
+Les zones d’incertitude sont explicitement nommées.</p>
+
+      <h2>Volet dynamique</h2>
+      <p class="block">Un système n’est jamais figé.
+Le volet dynamique caractérise le régime observé sans projeter de trajectoire.
+Il décrit :
+Les tendances constatées.
+Les marges d’absorption visibles.
+Les sensibilités non linéaires identifiables.
+Les points de fragilité structurelle.
+Les incertitudes structurantes.
+Il ne prédit pas.
+Il ne suppose pas une évolution future.
+Il n’infère aucune accélération non mesurée.
+Il décrit un régime présent.</p>
+
+      <h2>Limites explicites</h2>
+      <p class="block">Toute analyse comporte des limites.
+Elles ne sont pas un défaut.
+Elles sont une propriété des systèmes ouverts.
+L’analyse de cohérence :
+Ne dispose jamais de la totalité des variables.
+Opère à partir des données accessibles.
+Explicite ce qui est hors champ.
+Intègre l’incertitude comme variable.
+Elle devient invalide si :
+Les hypothèses centrales ne sont pas examinables.
+Les données sont filtrées.
+Les niveaux (description / interprétation / décision) sont mélangés.
+Une recommandation implicite apparaît.</p>
+
+      <h2>Domaine d’application</h2>
+      <p class="block">Cette approche est transversale.
+Elle ne dépend pas d’un secteur particulier.
+Elle s’applique à toute configuration où :
+Les contraintes sont identifiables.
+Les mécanismes sont analysables.
+Les dépendances sont formalisables.
+Elle ne vise pas l’exhaustivité.
+Elle vise la cohérence interne.</p>
+
+      <h2>Finalité</h2>
+      <p class="block">L’analyse de cohérence ne cherche pas à produire un résultat.
+Elle vise la clarté structurelle.
+Une analyse valide peut être lue intégralement sans savoir ce qu’il « faudrait faire ».
+Elle fournit des données organisées.
+Pas une direction.</p>
+
+      <h2>Posture</h2>
+      <p class="block">Cette discipline repose sur un principe simple :
+Ne rien ajouter au système observé.
+Ne rien retrancher.
+Ne rien orienter.
+Décrire ce qui est.
+Dans les limites de ce qui peut être dit.</p>
+
+      <h2>Modalités</h2>
+      <p class="block">Toute intervention commence par une vérification préalable :
+Le contexte doit permettre une analyse non filtrée.
+Les données doivent être accessibles.
+Le cadre doit être compatible avec une description rigoureuse.
+Si ces conditions ne sont pas réunies, l’analyse n’est pas engagée.</p>
+
+      <div class="rule"></div>
+
+      <p class="block muted">Ce document constitue une mise à disposition.
+Il ne s’agit ni d’un positionnement commercial,
+ni d’une promesse de résultat,
+ni d’un cadre stratégique.
+Il s’agit d’une méthode.
+Rien de plus.</p>
+    </div>
+
+    <footer>
+      <div>contact</div>
+      <div class="contact">contact@cadence.house</div>
+      <div class="sig">cadence.house</div>
+    </footer>
   </main>
 </body>
 </html>
